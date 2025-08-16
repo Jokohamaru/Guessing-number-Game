@@ -1,5 +1,4 @@
 import guessing
-import random
 
 def main():
     print("""
@@ -12,6 +11,7 @@ def main():
         print("2. MEDIUM (5 chances and choosing from 1 to 100)")
         print("3. HARD (3 chances and choosing form 1 to 100)")
         print("4. HELL (20 chances and choosing from 1 to any number (<1000000)) (IN PROGRESS)")
+        print("5. --EXIT--")
 
         user_selection_level = int(input("Enter your selection: "))
         match user_selection_level:
@@ -21,8 +21,8 @@ def main():
                 guessing.playing(5,100)
             case 3:
                 guessing.playing(3,100)
-            case 4:
-                None
+            case 5:
+                break
 
     
 if __name__ == "__main__":
